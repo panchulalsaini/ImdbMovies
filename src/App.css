@@ -1,38 +1,158 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(62, 63, 62);
+}
+/***************************Header Page Css ****************************/
+.nav-container{
+  height: 12vh;
+  width: 99vw;
+  background-color: rgb(53, 50, 50);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo{
+  height: 10vh;
+ width: 25vw;
+ display: flex;
+ align-items: center;
+ margin-left: 20px;
+}
+.logo a{
+  text-decoration: none;
+  font-family: cursive;
+  font-size: 22px;
+  color: floralwhite;
+  font-weight: bold;
+  background-color: gray;
+  padding: 8px;
+  border-radius: 32px;
+}
+
+.logo a:hover{
+background-color: floralwhite;
+color:gray ;
+}
+.nav-list{
+  margin-right: 40px;
+}
+.nav-list ul{
+  display: flex;
+}
+.nav-list ul li{
+  display: flex;
+      margin: 24px;
+    font-size: 25px;
+}
+.nav-list ul li a{
+  text-decoration: none;
+  color: antiquewhite;
+  font-weight: bold;
+  
+}
+.nav-list ul li a:hover{
+  color: burlywood;
+}
+/******************************** Search Page Css *************************/
+.Search{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Search input{
+  
+  height: 49px;
+  width: 30%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 14px;
+  padding: 10px 19px;
+  margin-top: 61px;
+}
+.Search input:focus{
+  background-color: rgb(202, 201, 201);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-cont{
+display: flex;
+flex-wrap: wrap;
+margin-top: 100px;
+justify-content: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  height: 450px;
+  width: 350px;
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.movie-img{
+  height: 300px;
+  width: 348px;
+  overflow: hidden;
+ 
+} 
+.movie-img img{
+  height: 300px;
+  width: 300px;
+  border-radius: 25px;
+
+}
+.container h1{
+  color: aliceblue;
+  text-decoration: none;
+  list-style:none ;
+margin-top: 20px;
+}
+/**************************** SingleMovie Page Css *************************/
+.SM-container{
+ height: 600px;
+ max-width: 72%;
+  background-color: rgb(42, 56, 56);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: auto;
+  padding: 25px;
+  border-radius: 22px;
+  margin-top: 52px; 
+}
+ .SM-image{
+height: 455px;
+width: 400px;
+margin: 25px;
+overflow: hidden;
+ }
+ .SM-image img{
+  height: 450px;
+  width: 390px;
+  border-radius: 35px;
+ }
+.SM-content{
+font-size: 18px;
+margin: 20px;
+}
+.SM-content h3{
+  padding: 4px;
+  text-shadow: 5px 5px 5px burlywood;
+}
+span{
+  color: aliceblue;
+  margin: 13px;
+  font-size: 18px;
+  text-shadow: 5px 5px 5px blueviolet;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
