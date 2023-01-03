@@ -77,13 +77,18 @@ color:gray ;
   background-color: rgb(202, 201, 201);
   width: 40%;
 }
-
+/***************** Movies Page Css ************/
 .main-cont{
 display: flex;
 flex-wrap: wrap;
 margin-top: 100px;
 justify-content: center;
 }
+
+.main-cont a{
+  text-decoration: none;
+}
+
 .container {
   height: 450px;
   width: 350px;
@@ -147,13 +152,13 @@ margin: 20px;
 }
 .SM-content h3{
   padding: 4px;
-  text-shadow: 5px 5px 5px burlywood;
+  text-shadow: 3px 3px 3px burlywood;
 }
 span{
   color: aliceblue;
   margin: 13px;
   font-size: 18px;
-  text-shadow: 5px 5px 5px blueviolet;
+  text-shadow: 3px 3px 3px blueviolet;
 }
 .SM-btn{
   height: 50px;
@@ -165,14 +170,37 @@ span{
   font-weight: bold;
   
 }
-.SM-btn button a{
-  list-style: none;
+.SM-btn a{
+  text-decoration: none;
   padding: 5px;
 }
 
-.SM-btn button a{
-  text-decoration: none;
-  font-weight: bold;
+.loader {
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 150px;
+  height: 150px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 
+
+.SM-btn a:hover{
+  background-color: rgb(114, 81, 41);
+}

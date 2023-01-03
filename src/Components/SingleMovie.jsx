@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom';
 import { Api_Url } from '../Context/Context';
+import Loader from './Loader';
 function SingleMovie() {
   const { id } = useParams();
   const [movie, setMovie] = useState('')
@@ -32,7 +33,7 @@ function SingleMovie() {
   }, [id])
 
   if (isLoading) {
-    return <h1>Loading.........</h1>
+    return <h1><Loader/></h1>
   }
   return (
     <>
