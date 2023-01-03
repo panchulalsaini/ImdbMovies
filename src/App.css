@@ -66,7 +66,7 @@ color:gray ;
 .Search input{
   
   height: 49px;
-  width: 30%;
+  width: 20%;
   font-size: 20px;
   font-weight: bold;
   border-radius: 14px;
@@ -75,6 +75,7 @@ color:gray ;
 }
 .Search input:focus{
   background-color: rgb(202, 201, 201);
+  width: 40%;
 }
 
 .main-cont{
@@ -127,7 +128,7 @@ margin-top: 20px;
   margin: auto;
   padding: 25px;
   border-radius: 22px;
-  margin-top: 52px; 
+  margin-top: 40px; 
 }
  .SM-image{
 height: 455px;
@@ -153,6 +154,25 @@ span{
   margin: 13px;
   font-size: 18px;
   text-shadow: 5px 5px 5px blueviolet;
+}
+.SM-btn{
+  height: 50px;
+  width: 130px;
+  border-radius: 10px;
+  margin: 30px;
+  margin-left: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+.SM-btn button a{
+  list-style: none;
+  padding: 5px;
+}
+
+.SM-btn button a{
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
