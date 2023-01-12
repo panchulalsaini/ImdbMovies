@@ -11,7 +11,7 @@ function App() {
     <Header/>
     <Routes>
       <Route path='/ImdbMovies'element={<Home />} />
-      <Route path='movie/:id'element={<SingleMovie />} />
+      <Route path='/ImdbMovies/movie/:id'element={<SingleMovie />} />
       <Route path='*' element ={<Error/>} />
     </Routes>
   

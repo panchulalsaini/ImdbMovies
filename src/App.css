@@ -201,6 +201,6 @@ span{
 
 
 
-.SM-btn a:hover{
+.SM-btn:hover{
   background-color: rgb(114, 81, 41);
 }
