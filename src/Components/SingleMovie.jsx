@@ -57,7 +57,7 @@ function SingleMovie() {
         </div>
       </div>
       <div>
-        <button className = 'SM-btn'><Link to="/">GoTo Home</Link> </button>
+        <button className = 'SM-btn'><Link to='/ImdbMovies'>GoTo Home</Link> </button>
       </div>
     </>
   )
